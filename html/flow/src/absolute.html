@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<style>
+  .item {
+    background: #000;
+    height: 100px;
+    width: 100px;
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .item-abs {
+    top: 10px;
+    right: 100px;
+  }
+  .absolute {
+    position: absolute;
+  }
+  .relative {
+    position: relative;
+  }
+  .fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+  }
+  .sticky {
+    position: sticky;
+    top: 300px;
+    right: 0;
+    text-align: right;
+  }
+  .sticky-wrapper {
+    position: relative;
+    height: 1700px;
+  }
+  .wrapper {
+    width: 500px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+</style>
+<div class="wrapper static">
+  <b>static</b>
+  <div class="item">1</div>
+  <div class="item absolute item-abs">2</div>
+  <div class="item">3</div>
+</div>
+<div class="wrapper relative">
+  <b>relative</b>
+  <div class="item">1</div>
+  <div class="item absolute item-abs">2</div>
+  <div class="item">3</div>
+</div>
+<div class="wrapper absolute">
+  <b>absolute</b>
+  <div class="item">1</div>
+  <div class="item absolute item-abs">2</div>
+  <div class="item">3</div>
+</div>
+<div class="wrapper fixed">
+  <b>fixed</b>
+  <div class="item">1</div>
+  <div class="item absolute item-abs">2</div>
+  <div class="item">3</div>
+</div>
+<div class="sticky-wrapper">
+  <div class="wrapper sticky">
+    <b>sticky</b>
+    <div class="item">1</div>
+    <div class="item absolute item-abs">2</div>
+    <div class="item">3</div>
+  </div>
+</div>
+</body>
+</html>
