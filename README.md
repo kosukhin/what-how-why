@@ -1,2 +1,6 @@
 # what-how-why
-Investigations
+
+- html
+  - flow: Поток рендеринга браузера
+- js
+  - event-loop: Событийный цикл
