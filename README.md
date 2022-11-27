@@ -2,6 +2,13 @@
 
 - [html](./html)
   - :heavy_check_mark: [flow: Поток рендеринга браузера](./html/flow/what.md)
+  - :heavy_multiplication_x: [reflow-repaint-comopse](./html/reflow-repaint-comopse/what.md)
+- [css](./css)
+  - :heavy_multiplication_x: [flex](./css/flex/what.md)
+  - :heavy_multiplication_x: [animation](./css/animation/what.md)
+  - :heavy_multiplication_x: [grid](./css/grid/what.md)
+  - :heavy_multiplication_x: [media-queries](./css/media-queries/prefer-reduced-motion/what.md)
+  - :heavy_multiplication_x: [transform](./css/transform/what.md)
 - [js](./js)
   - :heavy_check_mark: [event-loop: Событийный цикл](./js/event-loop/what.md)
   - :heavy_multiplication_x: [call-stack: Стэк вызывов](./js/call-stack/what.md)
