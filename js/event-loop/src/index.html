@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    console.log('one')
+    Promise.resolve().then(() => console.log('two'))
+    setTimeout(() => console.log('three'))
+    console.log('four')
+</script>
+</body>
+</html>
