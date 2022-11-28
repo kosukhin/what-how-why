@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    .wrapper {
+        background: blue;
+        display: flex;
+        padding: 10px;
+        gap: 10px;
+    }
+    .basis {
+        flex-basis: 300px;
+    }
+    .one {
+        display: flex;
+        background: indianred;
+        flex-grow: 1;
+        flex-shrink: 1;
+        justify-content: center;
+    }
+</style>
+<div class="wrapper">
+    <div class="one basis">123</div>
+    <div class="one">123</div>
+    <div class="one">123</div>
+</div>
+</body>
+</html>
