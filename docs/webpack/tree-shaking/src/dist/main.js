@@ -16,7 +16,7 @@
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"one\": () => (/* binding */ one),\n/* harmony export */   \"two\": () => (/* binding */ two)\n/* harmony export */ });\nfunction one() {\n    return 1\n}\n\nfunction two() {\n    return 2\n}\n\n//# sourceURL=webpack://tree-shaking/./src/functions.js?");
+eval("/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"one\": () => (/* binding */ one)\n/* harmony export */ });\n/* unused harmony export two */\nfunction one() {\n    return 1\n}\n\nfunction two() {\n    return 2\n}\n\n//# sourceURL=webpack://tree-shaking/./src/functions.js?");
 
 /***/ }),
 
@@ -24,9 +24,9 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions */ \"./src/functions.js\");\n\n\nfunction init() {\n    (0,_functions__WEBPACK_IMPORTED_MODULE_0__.one)()\n}\n\n//# sourceURL=webpack://tree-shaking/./src/index.js?");
+eval("/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions */ \"./src/functions.js\");\n\n\nfunction init() {\n    (0,_functions__WEBPACK_IMPORTED_MODULE_0__.one)()\n}\n\n//# sourceURL=webpack://tree-shaking/./src/index.js?");
 
 /***/ })
 
@@ -72,17 +72,6 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _fun
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
-/******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
 /******/ 	})();
 /******/ 	
 /************************************************************************/

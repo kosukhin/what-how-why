@@ -4,6 +4,6 @@ module.exports = {
     entry: './src/index.js',
     optimization: {
         // Включает тришейкинг по экспортам
-        // usedExports: true,
+        usedExports: true,
     },
 }
