@@ -33,3 +33,4 @@
   - :heavy_multiplication_x: [hooks](docs/nuxt/hooks/what.md)
   - :heavy_multiplication_x: [module](docs/nuxt/module/what.md)
   - :heavy_multiplication_x: [plugins](docs/nuxt/plugins/what.md)
+- :heavy_multiplication_x: [WebRTC](docs/webrtc)
