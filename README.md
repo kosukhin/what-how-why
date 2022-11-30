@@ -4,6 +4,7 @@
   - :heavy_check_mark: [flow: Поток рендеринга браузера](docs/html/flow/what.md)
   - :heavy_multiplication_x: [reflow-repaint-comopse](docs/html/reflow-repaint-comopse/what.md)
   - :heavy_multiplication_x: [web-components](docs/html/web-components/what.md)
+    - :heavy_multiplication_x: [shadow-dom](docs/html/web-components/shadow-dom/what.md)
 - [css](docs/css)
   - [flex](.css/flex/)
     - :heavy_check_mark: [flex-basis](docs/css/flex/flex-basis/what.md)
