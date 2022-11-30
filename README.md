@@ -20,7 +20,7 @@
   - :heavy_multiplication_x: [animation](docs/js/animation/what.md)
 - [webpack](docs/webpack)
   - :heavy_multiplication_x: [manifest](docs/webpack/manifest/what.md)
-  - :heavy_multiplication_x: [tree-shaking](docs/webpack/tree-shaking/what.md)
+  - :heavy_check_mark: [tree-shaking](docs/webpack/tree-shaking/what.md)
 - [babel](docs/babel)
   - :heavy_multiplication_x: [plugin](docs/babel/plugin/what.md)
 - [jest](docs/jest)
