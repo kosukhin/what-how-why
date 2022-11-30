@@ -1,5 +1,10 @@
 [Что](what.md) | [Как](how.md) | [Почему](why.md)
 
+Для тришейкинга используется плагин ModuleConcatenationPlugin
+
+## optimization.usedExports
+
+Позволяет пометить неиспользованные экспорты.
 
 ## package.json sideEffects
 
