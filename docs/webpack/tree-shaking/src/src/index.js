@@ -1,5 +1,3 @@
 import {one} from './functions'
 
-function init() {
-    one()
-}
+window.test = one

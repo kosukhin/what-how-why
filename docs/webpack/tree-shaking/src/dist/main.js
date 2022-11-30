@@ -16,7 +16,7 @@
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"one\": () => (/* binding */ one)\n/* harmony export */ });\n/* unused harmony export two */\nfunction one() {\n    return 1\n}\n\nfunction two() {\n    return 2\n}\n\n//# sourceURL=webpack://tree-shaking/./src/functions.js?");
+eval("/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"one\": () => (/* binding */ one)\n/* harmony export */ });\n/* unused harmony export two */\nfunction one(a) {\n    return a + 1\n}\n\nfunction two(b) {\n    return b + 2\n}\n\n//# sourceURL=webpack://tree-shaking/./src/functions.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harm
   \**********************/
 /***/ ((__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) => {
 
-eval("/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions */ \"./src/functions.js\");\n\n\nfunction init() {\n    (0,_functions__WEBPACK_IMPORTED_MODULE_0__.one)()\n}\n\n//# sourceURL=webpack://tree-shaking/./src/index.js?");
+eval("/* harmony import */ var _functions__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions */ \"./src/functions.js\");\n\n\nwindow.test = _functions__WEBPACK_IMPORTED_MODULE_0__.one\n\n//# sourceURL=webpack://tree-shaking/./src/index.js?");
 
 /***/ })
 
