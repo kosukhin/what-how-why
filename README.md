@@ -34,6 +34,7 @@
   - :heavy_multiplication_x: [module](docs/nuxt/module/what.md)
   - :heavy_multiplication_x: [plugins](docs/nuxt/plugins/what.md)
 - [HTTP](docs/http)
+  - :heavy_multiplication_x: [CORS](docs/http/cors/what.md)
   - [Auth](docs/http/auth)
     - :heavy_multiplication_x: [JWT](docs/http/auth/jwt/what.md)
     - :heavy_multiplication_x: [OAuth](docs/http/auth/oauth/what.md)
