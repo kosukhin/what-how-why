@@ -42,3 +42,5 @@
   - :heavy_multiplication_x: [JSON RPC](docs/http/json-rpc/what.md)
   - :heavy_multiplication_x: [GraphQL](docs/http/graph-ql/what.md)
 - :heavy_multiplication_x: [WebRTC](docs/webrtc)
+- [package-managers](docs/package-managers)
+  - [difference](docs/package-managers/difference/what.md)
