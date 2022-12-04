@@ -5,6 +5,62 @@
     <title>Title</title>
 </head>
 <body>
+    <div id="app">
+        Hello {{ hello }}
+        <div>
+            Результат вотчинга: {{ watchResultString }}
+        </div>
+    </div>
+    <script type="module">
+        import Vue from 'https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.esm.browser.js';
 
+        const app = new Vue({
+            el: "#app",
+            data: () => ({
+                hello: 'world',
+                watchResult: [],
+            }),
+            computed: {
+                watchResultString() {
+                    return this.watchResult.join()
+                }
+            },
+            watch: {
+                hello(newValue) {
+                    this.watchResult.push(newValue)
+                }
+            },
+            beforeCreate() {
+                this.hello = 'bc';
+            },
+            created() {
+                this.hello = 'cd';
+            },
+            beforeMount() {
+                this.hello = 'bm';
+            },
+            mounted() {
+                this.hello = 'md';
+            },
+            beforeUpdate() {
+                this.hello = 'bu';
+            },
+            updated() {
+                this.hello = 'ud';
+            },
+            beforeDestroy() {
+                this.hello = 'bd';
+            },
+            destroyed() {
+                this.hello = 'dd';
+            },
+            activated() {
+                this.hello = 'ad';
+            },
+            deactivated() {
+                this.hello = 'dad';
+            }
+        })
+    </script>
 </body>
 </html>
