@@ -6,9 +6,13 @@
 </head>
 <body>
     <div id="app">
+        <button @click="destroy">destroy</button>
         Hello {{ hello }}
         <div>
             Результат вотчинга: {{ watchResultString }}
+        </div>
+        <div>
+            {{ independentResultString }}
         </div>
     </div>
     <script type="module">
@@ -19,46 +23,85 @@
             data: () => ({
                 hello: 'world',
                 watchResult: [],
+                bc: 0,
+                cd: 0,
+                bm: 0,
+                md: 0,
+                bu: 0,
+                bd: 0,
+                dd: 0,
+                ad: 0,
+                dad: 0,
             }),
             computed: {
+                independentResultString() {
+                    return [
+                        'bc:' + this.bc,
+                        'cd:' + this.cd,
+                        'bm:' + this.bm,
+                        'md:' + this.md,
+                        'bu:' + this.bu,
+                        'bd:' + this.bd,
+                        'dd:' + this.dd,
+                        'ad:' + this.ad,
+                        'dad:' + this.dad,
+                    ].join()
+                },
                 watchResultString() {
                     return this.watchResult.join()
                 }
             },
             watch: {
-                hello(newValue) {
-                    this.watchResult.push(newValue)
+                hello: {
+                    handler(newValue) {
+                        this.watchResult.push(newValue)
+                    }
                 }
             },
             beforeCreate() {
+                this.bc = 1;
                 this.hello = 'bc';
             },
             created() {
+                this.cd = 1;
                 this.hello = 'cd';
             },
             beforeMount() {
+                this.bm = 1;
                 this.hello = 'bm';
             },
             mounted() {
+                this.md = 1;
                 this.hello = 'md';
             },
             beforeUpdate() {
+                this.bu = 1;
                 this.hello = 'bu';
             },
             updated() {
-                this.hello = 'ud';
+                // this.hello = 'ud';
+                // Это приведет к бесконечному циклу
             },
             beforeDestroy() {
+                this.bd = 1;
                 this.hello = 'bd';
             },
             destroyed() {
+                this.dd = 1;
                 this.hello = 'dd';
             },
             activated() {
+                this.ad = 1;
                 this.hello = 'ad';
             },
             deactivated() {
+                this.dad = 1;
                 this.hello = 'dad';
+            },
+            methods: {
+                destroy() {
+                    this.$destroy()
+                }
             }
         })
     </script>
