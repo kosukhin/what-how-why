@@ -18,6 +18,7 @@
   - :heavy_check_mark: [execution-context](./docs/js/execution-context/why.md)
   - :heavy_multiplication_x: [pwa](docs/js/pwa/what.md)
   - :heavy_multiplication_x: [animation](docs/js/animation/what.md)
+  - :heavy_multiplication_x: [loaded events](docs/js/loaded/what.md)
 - [webpack](docs/webpack)
   - :heavy_multiplication_x: [manifest](docs/webpack/manifest/what.md)
   - :heavy_check_mark: [tree-shaking](docs/webpack/tree-shaking/what.md)
