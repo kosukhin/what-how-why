@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="button">Click Me!</button>
+<button id="button2">Click Me 2!</button>
+
+  <script>
+    class Button {
+      constructor() {
+        this.a = 1;
+      }
+
+      handleClick = () => {
+        // Выведет ссылку на объект, тк такая функция равнозначна заданию
+        // ее в конструкторе, поэтому this будет ссылаться на объект
+        console.log(this)
+      }
+
+      handleClick2() {
+        // Выведет event.target
+        console.log(this)
+      }
+
+      render() {
+        document.getElementById('button').addEventListener('click', this.handleClick)
+        document.getElementById('button2').addEventListener('click', this.handleClick2)
+      }
+    }
+
+    const button = new Button()
+    button.render()
+  </script>
+</body>
+</html>
