@@ -1,0 +1,22 @@
+{
+  "name": "whw",
+  "version": "1.0.0",
+  "description": "- [html](docs/html)   - :heavy_check_mark: [flow: Поток рендеринга браузера](docs/html/flow/what.md)   - :heavy_multiplication_x: [reflow-repaint-comopse](docs/html/reflow-repaint-comopse/what.md)   - :heavy_multiplication_x: [web-components](docs/html/web-components/what.md)     - :heavy_multiplication_x: [shadow-dom](docs/html/web-components/shadow-dom/what.md) - [css](docs/css)   - [flex](.css/flex/)     - :heavy_check_mark: [flex-basis](docs/css/flex/flex-basis/what.md)   - :heavy_multiplication_x: [animation](docs/css/animation/what.md)   - :heavy_multiplication_x: [grid](docs/css/grid/what.md)   - :heavy_multiplication_x: [media-queries](docs/css/media-queries/prefer-reduced-motion/what.md)   - :heavy_multiplication_x: [transform](docs/css/transform/what.md) - [js](docs/js)   - :heavy_check_mark: [event-loop: Событийный цикл](docs/js/event-loop/what.md)   - :heavy_check_mark: [call-stack: Стэк вызывов](docs/js/call-stack/what.md)   - :heavy_check_mark: [execution-context](./docs/js/execution-context/why.md)   - :heavy_multiplication_x: [pwa](docs/js/pwa/what.md)   - :heavy_multiplication_x: [animation](docs/js/animation/what.md)   - :heavy_multiplication_x: [loaded events](docs/js/loaded/what.md) - [webpack](docs/webpack)   - :heavy_multiplication_x: [manifest](docs/webpack/manifest/what.md)   - :heavy_check_mark: [tree-shaking](docs/webpack/tree-shaking/what.md) - [babel](docs/babel)   - :heavy_multiplication_x: [plugin](docs/babel/plugin/what.md) - [jest](docs/jest)   - :heavy_multiplication_x: [assertions](docs/jest/assertions/what.md)   - :heavy_multiplication_x: [snapshots](docs/jest/snapshots/what.md) - [vue](docs/vue)   - :heavy_multiplication_x: [$nextTick](docs/vue/$nextTick/what.md)   - :heavy_multiplication_x: [watch](docs/vue/watch/what.md) - [nuxt](docs/nuxt)   - :heavy_multiplication_x: [hooks](docs/nuxt/hooks/what.md)   - :heavy_multiplication_x: [module](docs/nuxt/module/what.md)   - :heavy_multiplication_x: [plugins](docs/nuxt/plugins/what.md) - [HTTP](docs/http)   - :heavy_multiplication_x: [CORS](docs/http/cors/what.md)   - [Auth](docs/http/auth)     - :heavy_multiplication_x: [JWT](docs/http/auth/jwt/what.md)     - :heavy_multiplication_x: [OAuth](docs/http/auth/oauth/what.md)   - :heavy_multiplication_x: [REST API](docs/http/rest-api/what.md)   - :heavy_multiplication_x: [JSON RPC](docs/http/json-rpc/what.md)   - :heavy_multiplication_x: [GraphQL](docs/http/graph-ql/what.md) - :heavy_multiplication_x: [WebRTC](docs/webrtc) - [package-managers](docs/package-managers)   - [difference](docs/package-managers/difference/what.md)",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kosukhin/what-how-why.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kosukhin/what-how-why/issues"
+  },
+  "homepage": "https://github.com/kosukhin/what-how-why#readme"
+}
