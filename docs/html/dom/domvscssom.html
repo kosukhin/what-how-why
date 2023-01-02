@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            [data-display="none"] {
+                display: none;
+            }
+        </style>        
+        <script>
+            function tg1() {
+                const content = document.querySelector('#tg1')
+                if (!content.style.display) content.style.display = 'block'
+                const isVisible = content.style.display === 'block'
+                content.style.display = isVisible ? 'none' : 'block'
+            }
+            
+            function tg2() {
+                const content = document.querySelector('#tg2') 
+                if (!content.dataset.display) content.dataset.display = 'block'
+                const isVisible = content.dataset.display === 'block'
+                content.dataset.display = isVisible ? 'none' : 'block'               
+            }
+        </script>
+    </head>
+    <body>
+        <a href="/">Home</a>
+        test dom vs cssom
+        <div>
+            <button onclick="tg1()">Tg1 cssom</button>
+            <button onclick="tg2()">Tg2 dom</button>
+        </div>
+        <div>
+            <div id="tg1">tg1 content</div>
+            <div id="tg2">tg2 content</div>
+        </div>
+    </body>
+</html>
