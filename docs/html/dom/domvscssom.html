@@ -4,7 +4,7 @@
             [data-display="none"] {
                 display: none;
             }
-        </style>        
+        </style>
         <script>
             function tg1() {
                 const content = document.querySelector('#tg1')
@@ -12,18 +12,25 @@
                 const isVisible = content.style.display === 'block'
                 content.style.display = isVisible ? 'none' : 'block'
             }
-            
+
             function tg2() {
-                const content = document.querySelector('#tg2') 
+                const content = document.querySelector('#tg2')
                 if (!content.dataset.display) content.dataset.display = 'block'
                 const isVisible = content.dataset.display === 'block'
-                content.dataset.display = isVisible ? 'none' : 'block'               
+                content.dataset.display = isVisible ? 'none' : 'block'
             }
         </script>
     </head>
     <body>
         <a href="/">Home</a>
-        test dom vs cssom
+        <p>
+            Тут проверяю разницу между изменением стилей через element.style.display
+            и изменение аттрибута через element.dataset.display
+        </p>
+        <p>
+            По итогу получилось что изменение атрибута html отрабатывает примерно на 6мс быстрее.
+            причина скорее всего в том что не нужно выполнять манипуляции с CSSOM
+        </p>
         <div>
             <button onclick="tg1()">Tg1 cssom</button>
             <button onclick="tg2()">Tg2 dom</button>
