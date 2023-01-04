@@ -1,6 +1,6 @@
 self.addEventListener('install', (e) => {
     self.skipWaiting();
-    console.log('Воркер установлен');
+    console.log('Воркер установлен 2');
 });
 
 self.addEventListener('active', (e) => {

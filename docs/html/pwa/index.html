@@ -5,10 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="manifest" href="/manifest.webmanifest">
+    <script type="text/javascript">
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('service-worker.js')
+            .then(() => {
+                console.log('success registered');
+            })
+            .catch(() => {
+                console.log('error when registering');
+            })
+        }
+    </script>
 </head>
 <body>
     <a href="/">Home</a>
-    <a target="_blank" href="https://habr.com/ru/post/419585/">PWA источник</a>
+    <div>
+        <a href="https://developer.mozilla.org/ru/docs/Web/Manifest" target="_blank">
+            Manifest
+        </a>
+    </div>
+    <div>
+        <a target="_blank" href="https://habr.com/ru/post/419585/">PWA источник</a>
+    </div>
     <p>Просто работа с pwa</p>
 </body>
 </html>
